@@ -32,15 +32,14 @@ namespace HemuppgiftKlasser
             }
         }
 
-        //Konstruktor
+        //Constructor
         public Employee(string FirstName, string LastName)
         {
             this.FirstName = FirstName;
             this.LastName = LastName;
         }
 
-        //Metoder
-        //Returnerar årslön
+        //Methods
         public double GetAnnualSalary()
         {
             return Salary * 12;
@@ -50,7 +49,7 @@ namespace HemuppgiftKlasser
         {
             if (percentage > 0)
             {
-                Salary *= (1+(percentage/100));
+                Salary += Salary * (percentage/100);
             }
         }
     }
